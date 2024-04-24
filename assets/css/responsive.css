@@ -1,0 +1,167 @@
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: var(--white-color);
+        height: 70px;
+    }
+    .cart {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: var(--white-color);
+    }
+    .cart i,
+    .cart span {
+        color: var(--black-color);
+        font-size: 2rem;
+    }
+    .bi-person,
+    .bi-heart {
+        display: none;
+    }
+    .fa-magnifying-glass {
+        margin: 0 auto;
+    }
+    .navbar-toggler {
+        margin: 0 10px;
+    }
+
+
+    .nav-link.active::after {
+        content: '';
+        height: 2.3px;
+        width: 0;
+        background: var(--black-color);
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        transition: 0.5s;
+        width: 10%;
+    }
+    .nav-link::after {
+        content: '';
+        height: 2.3px;
+        width: 0;
+        background: var(--black-color);
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        transition: 0.5s;
+    }
+    .nav-link:hover::after {
+        width: 10%;
+    }
+    .offcanvas-title {
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .btn-close {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .offcanvas {
+        transition: transform 0.3s ease-in-out;
+    }
+    /* bug offcanva không full height */
+    .offcanvas-body {
+        overflow: unset;
+        background-color: white;
+        height: 100vh;
+        padding-bottom: auto;
+    }
+    .offcanvas-start {
+        transform: translateX(-100%);
+    }
+    .offcanvas.show {
+        transform: translateX(0);
+    }
+    .navbar-toggler {
+        color: var(--black-color);
+        font-weight: bold;
+    }
+    #hero-carousel {
+        height: 80vh;
+    }
+    
+    .carousel-item {
+        height: 80vh;
+    }
+
+    .carousel-caption {
+        text-align: center; 
+        top: 30%;
+    }
+    
+    .carousel-caption h5,
+    .carousel-caption p,
+    .carousel-caption button {
+        text-align: center; 
+        margin-right: auto; 
+    }
+    .carousel-caption > h5 {
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    .carousel-caption button {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) { 
+    .brand-logo {
+        width: 30vw;
+    }
+    #hero-carousel {
+        height: 70vh;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p,
+    .carousel-caption button {
+        text-align: center; 
+        margin-right: auto; 
+    }
+    .carousel-caption > h5 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .carousel-caption p {
+        font-size: 1.6rem;
+    }
+    .carousel-caption button {
+        margin: auto;
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5,
+    .carousel-caption p,
+    .carousel-caption button {
+        text-align: center; 
+        margin-right: auto; 
+    }
+    .carousel-caption > h5 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .carousel-caption p {
+        font-size: 1.4rem;
+    }
+    .carousel-caption button {
+        margin: 0 auto;
+        width: 200px;
+        height: 50px;
+    }
+}
+
