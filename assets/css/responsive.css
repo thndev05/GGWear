@@ -13,12 +13,15 @@
         background-color: var(--white-color);
     }
     .cart i,
-    .cart span {
+    .cart .cart-count {
         color: var(--black-color);
         font-size: 2rem;
     }
+    .cart-list {
+        bottom: -104px;
+    }
     .bi-person,
-    .bi-heart {
+    .nav-btn-wrap .bi-heart {
         display: none;
     }
     .fa-magnifying-glass {
@@ -28,7 +31,12 @@
         margin: 0 10px;
     }
 
-
+    .nav-link {
+        color: var(--black-color);
+    }
+    .nav-link:hover {
+        color: var(--black-color);
+    }
     .nav-link.active::after {
         content: '';
         height: 2.3px;
@@ -92,7 +100,7 @@
 
     .carousel-caption {
         text-align: center; 
-        top: 30%;
+        top: 20%;
     }
     
     .carousel-caption h5,
@@ -108,6 +116,20 @@
     .carousel-caption button {
         margin: auto;
     }
+    .carousel-inner {
+        margin-top: 80px;
+    }
+    .carousel-item > img {
+        height: 500px;
+        object-fit: cover;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .commerce {
+        padding-top: 0;
+    }
+    
 }
 
 @media (max-width: 768px) { 
@@ -142,6 +164,19 @@
         width: 200px;
         height: 50px;
     }
+    .commerce {
+        padding: 60px 0 0 0;
+        margin: 0 26px;
+    }
+    .commerce-box {
+        max-width: 100%; 
+    }
+    .commerce-heading {
+        font-size: 3rem;
+    }
+    .product {
+        margin: 100px 40px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -162,6 +197,13 @@
         margin: 0 auto;
         width: 200px;
         height: 50px;
+    }
+    .commerce-heading {
+        font-size: 2rem;
+    }
+    .commerce-cart {
+        bottom: 30px;
+        right: 30px;
     }
 }
 

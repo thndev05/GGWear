@@ -15,6 +15,15 @@
 
 (function() {
     document.addEventListener('DOMContentLoaded', (e) => {
-        
+        navbarEl = document.querySelector('.navbar');
+        const position = navbarEl.clientTop + navbarEl.clientHeight + 350;
+  
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > position) {
+                navbarEl.classList.add('fixed');
+            } else if (window.scrollY < position) {
+                navbarEl.classList.remove('fixed');
+            }
+        })
     });
 })();
