@@ -73,6 +73,12 @@ header {
 .nav-btn {
     margin-right: 30px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+a > .nav-btn{
+    color: rgb(212, 37, 66);
+    font-weight: bold;
 }
 
 .bi-person {
