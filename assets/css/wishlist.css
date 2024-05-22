@@ -1,6 +1,7 @@
 
 .navbar {
     border-bottom: 1px solid var(--black-color);
+    background-color: var(--white-color);
 }
 
 #footer {
@@ -13,7 +14,7 @@ main {
 }
 
 .breadcrumbs {
-    margin: 40px 0 0 5%;
+    margin: 150px 0 0 5%;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
