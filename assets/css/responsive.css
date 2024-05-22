@@ -177,6 +177,23 @@
     .product {
         margin: 100px 40px;
     }
+    #footer {
+        height: 600px;
+    }
+    .t-footer {
+        padding-top: 200px;
+    }
+    .t-footer-el {
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 60px;
+    }
+    .b-footer {
+        padding-top: 200px;
+    }
+    .s-commerce-box:first-child .s-c-title {
+        font-size: 15rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -204,6 +221,13 @@
     .commerce-cart {
         bottom: 30px;
         right: 30px;
+    }
+    .s-commerce-box:last-child .s-c-title {
+        font-size: 8rem;
+        left: 20%;
+    }
+    .s-c-sale {
+        left: 30%;
     }
 }
 
